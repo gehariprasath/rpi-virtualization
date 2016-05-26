@@ -3,7 +3,9 @@
     <remote  name="openembedded"
 	     fetch="git://git.openembedded.org/"/>
     <remote  name="yocto"
-	     fetch="git://git.yoctoproject.org/"/>
+	    fetch="git://git.yoctoproject.org/"/>
+    <remote  name="github"
+	     fetch="git://github.com"/>
 
 
     <!-- github/yocto repos -->
@@ -14,6 +16,8 @@
     <project path="rpi-virt-distro/meta-raspberrypi" name="meta-raspberrypi" remote="yocto"
 	     revision="master"/>
     <project path="rpi-virt-distro/meta-virtualization" name="meta-virtualization" remote="yocto"
+	     revision="master"/>
+     <project path="rpi-virt-distro/rpi-virtualization" name="gehariprasath/rpi-virtualization" remote="github"
 	     revision="master"/>
 
 </manifest>
