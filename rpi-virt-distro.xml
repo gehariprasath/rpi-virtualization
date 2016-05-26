@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote  name="openembedded"
+	     fetch="git://git.openembedded.org/"/>
+    <remote  name="yocto"
+	     fetch="git://git.yoctoproject.org/"/>
+
+
+    <!-- github/yocto repos -->
+    <project path="rpi-virt-distro/meta-openembedded" name="meta-openembedded" remote="openembedded"
+	     revision="master"/>
+    <project path="rpi-virt-distro/poky" name="poky" remote="yocto"
+	     revision="master"/>
+    <project path="rpi-virt-distro/meta-raspberrypi" name="meta-raspberrypi" remote="yocto"
+	     revision="master"/>
+    <project path="rpi-virt-distro/meta-virtualization" name="meta-virtualization" remote="yocto"
+	     revision="master"/>
+
+</manifest>
